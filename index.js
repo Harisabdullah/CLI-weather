@@ -75,7 +75,7 @@ const getChoice = () => {
       `2) Press d to Delete City\n` +
       `3) Press w to see weather of saved cities\n` +
       `4) Press q to exit the app\n` +
-      `> `.blue, {hideEchoBack: true});
+      `> `.blue);
 }
 
 
