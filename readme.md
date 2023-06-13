@@ -24,7 +24,7 @@ The Weather App is a command-line application that allows users to get weather i
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/your-username/weather-app.git](https://github.com/Harisabdullah/CLI-weather.git)
+   git clone https://github.com/Harisabdullah/CLI-weather.git
 2. Install dependencies:
 
    ```bash
