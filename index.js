@@ -12,7 +12,11 @@ const saveCities = (cities) => {
 }
 
 const getCity = async () => {
-  return await cli('Enter a city name: ');
+  let city = await cli('Please enter a city name: ');
+  while (!city) {
+    console.log('Please enter a city name: '.yellow);
+    city = await cli('Enter a city name: ');
+  }
 }
 
 
