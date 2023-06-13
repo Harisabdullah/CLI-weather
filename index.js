@@ -17,6 +17,7 @@ const getCity = async () => {
     console.log('Please enter a city name: '.yellow);
     city = await cli('Enter a city name: ');
   }
+  return city;
 }
 
 
