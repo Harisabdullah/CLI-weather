@@ -43,6 +43,10 @@ const getWeather = async (city) => {
     const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric`);
     return response.data;
   } catch (error) {
+    if(error.code === 'ENOTFOUND'){
+      console.log('Unable to connect to API servers || Try checking your internet connection'.red)
+      process.exit(1);
+    }
     console.log(error.response.data.message.red);
     process.exit(1);
   }

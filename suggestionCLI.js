@@ -27,12 +27,14 @@ const suggestionCLI = (prompt) => {
         // Handle Backspace
         if (userInput.length > 0) {
           userInput = userInput.slice(0, -1);
+          options = cities
+              .filter((city) => city.name.toLowerCase().includes(userInput.trim()))
+              .map((city) => city.name)
+              .slice(0, 10);
         }
       } else if (char === '\r') {
         // Handle Enter key
         if (selectedOptionIndex >= 0 && selectedOptionIndex < options.length) {
-          console.log(`You entered: ${userInput.trim()}`);
-          console.log(`Selected option: ${options[selectedOptionIndex]}`);
           resolve(options[selectedOptionIndex]);
           rl.close();
         } else {
