@@ -1,0 +1,18 @@
+{
+  "name": "weather-app-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "all-the-cities": "^3.1.0",
+    "axios": "^1.4.0",
+    "keypress": "^0.2.1",
+    "readline-sync": "^1.4.10"
+  },
+  "description": ""
+}
